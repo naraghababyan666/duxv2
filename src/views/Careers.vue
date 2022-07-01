@@ -2,7 +2,7 @@
   <div>
 
     <div class="careers-banner">
-<!--      <HeaderPart/>-->
+      <HeaderPart/>
       <h1 class="careers-banner__title">
         <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
                                    alt="elipse">Careers</span>
@@ -306,13 +306,13 @@
 </template>
 
 <script>
-//import HeaderPart from "@/components/Header";
-//import FooterPart from "@/components/Footer";
+import HeaderPart from "@/components/Header";
+import FooterPart from "@/components/Footer";
 
 export default {
   name: "Careers-page",
-  components: {}
-  // HeaderPart, FooterPart
+  components: {HeaderPart, FooterPart}
+
 }
 </script>
 
