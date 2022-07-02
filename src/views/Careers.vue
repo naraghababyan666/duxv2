@@ -2,7 +2,11 @@
   <div>
 
     <div class="careers-banner">
+<<<<<<< HEAD
       <HeaderPart/>
+=======
+      <HeaderPart @opened="openedMobMenu"/>
+>>>>>>> 9c66e66834cadc2e9925e4b70643b0d9b2e88815
       <h1 class="careers-banner__title">
         <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
                                    alt="elipse">Careers</span>
@@ -13,8 +17,8 @@
     <div class="devider">
       <img src="../assets/images/careers/careers.svg" alt="careers"/>
     </div>
-    <div class="line">
-      <marquee direction="row" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
+    <div class="line" v-if="menuClosed">
+      <marquee  direction="row" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
              viewBox="0 0 16 16">
           <circle cx="8" cy="8" r="8"/>
@@ -300,7 +304,7 @@
       </h2>
     </div>
     <div class="footer">
-<!--      <FooterPart/>-->
+      <FooterPart/>
     </div>
   </div>
 </template>
@@ -311,8 +315,27 @@ import FooterPart from "@/components/Footer";
 
 export default {
   name: "Careers-page",
+<<<<<<< HEAD
   components: {HeaderPart, FooterPart}
 
+=======
+  data(){
+    return {
+      menuClosed: true,
+    }
+  },
+  components: {
+  HeaderPart, FooterPart},
+  methods: {
+    openedMobMenu(value){
+      if(value){
+        this.menuClosed = !this.menuClosed
+      }else{
+        this.menuClosed = true
+      }
+    }
+  }
+>>>>>>> 9c66e66834cadc2e9925e4b70643b0d9b2e88815
 }
 </script>
 

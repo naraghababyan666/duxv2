@@ -5,7 +5,7 @@
         <img src="../assets/images/logo.svg">
       </div>
       <div class="mobile-version">
-        <input id="toggle" type="checkbox" />
+        <input id="toggle" type="checkbox" @change="checkbox" />
         <label for="toggle" class="hamburger">
           <div class="top-bun"></div>
           <div class="meat"></div>
@@ -47,9 +47,20 @@
 <script>
 export default {
     name: 'header-part',
+  data(){
+      return {
+        opened: false
+      }
+  },
   components: {
 
 
+  },
+  methods: {
+    checkbox(e){
+      this.opened = !this.opened
+      this.$emit('opened', this.opened)
+    }
   }
 }
 </script>
@@ -92,7 +103,7 @@ export default {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #010C28;;
+    background-color: #010C28;
     top: -100%; left: 0; right: 0; bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -165,6 +176,7 @@ export default {
 @media screen and (max-width: 1024px){
   .menu{
     padding: 25px 8px !important;
+    //padding: 0;
     .logo{
       width: 110px !important;
       img{
