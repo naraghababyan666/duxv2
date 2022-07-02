@@ -217,4 +217,60 @@ export default {
     width: 352px !important;
   }
 }
+@media only screen and (max-width: 802px){
+  .contact-banner__title{
+    max-width: 674px !important;
+    font-size: 68px !important;
+  }
+  .contact-us{
+    max-width: 127px !important;
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 676px){
+  .contact-banner{
+    min-height: 523px !important;
+
+  }
+  .devider{
+    padding-top: 0 !important;
+  }
+  .contact-banner__title{
+    max-width: 674px !important;
+    font-size: 68px !important;
+    margin-top: 40px !important;
+  }
+  .contact-us{
+    max-width: 100% !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%!important;
+  }
+  .contact-form{
+    flex-direction: column;
+    padding: 0 30px;
+    justify-content: center !important;
+  }
+  .form-left-side{
+    margin-top: 0 !important;
+  }
+  .form-right-side{
+    margin-top: 0 !important;
+  }
+  .form-right-side-input{
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 592px){
+  .contact-banner__title{
+    max-width: 288px !important;
+    font-size: 34px !important;
+  }
+  .contact-banner{
+    min-height: 393px !important;
+  }
+}
 </style>
