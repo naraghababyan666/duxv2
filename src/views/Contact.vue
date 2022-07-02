@@ -273,4 +273,5 @@ export default {
     min-height: 393px !important;
   }
 }
+
 </style>
