@@ -2,11 +2,7 @@
   <div>
 
     <div class="careers-banner">
-<<<<<<< HEAD
-      <HeaderPart/>
-=======
       <HeaderPart @opened="openedMobMenu"/>
->>>>>>> 9c66e66834cadc2e9925e4b70643b0d9b2e88815
       <h1 class="careers-banner__title">
         <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
                                    alt="elipse">Careers</span>
@@ -315,10 +311,7 @@ import FooterPart from "@/components/Footer";
 
 export default {
   name: "Careers-page",
-<<<<<<< HEAD
-  components: {HeaderPart, FooterPart}
 
-=======
   data(){
     return {
       menuClosed: true,
@@ -335,7 +328,7 @@ export default {
       }
     }
   }
->>>>>>> 9c66e66834cadc2e9925e4b70643b0d9b2e88815
+
 }
 </script>
 
