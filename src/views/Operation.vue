@@ -220,8 +220,27 @@
           </div>
         </div>
       </div>
-      <div class="payment-providers">
-
+      <div class="payment-provider">
+          <h3 class="payment-provider-title">
+            <span class="color-blue"> payment </span>providers
+          </h3>
+          <div class="payment-provider-row">
+            <div class="payment-provider-row-columns">
+              <img src="../assets/images/operation/payment/visa.svg" alt="payment">
+              <img src="../assets/images/operation/payment/mastercard.svg" alt="payment">
+              <img src="../assets/images/operation/payment/interac.svg" alt="payment">
+              <img src="../assets/images/operation/payment/better.svg" alt="payment">
+              <img src="../assets/images/operation/payment/neteller.svg" alt="payment">
+              <img src="../assets/images/operation/payment/jeton.svg" alt="payment">
+            </div>
+            <div class="payment-provider-row-columns">
+              <img src="../assets/images/operation/payment/rappid.svg" alt="payment">
+              <img src="../assets/images/operation/payment/ezwallet.svg" alt="payment">
+              <img src="../assets/images/operation/payment/mifinity.svg" alt="payment">
+              <img src="../assets/images/operation/payment/dimoco.svg" alt="payment">
+              <img src="../assets/images/operation/payment/skrill.svg" alt="payment">
+            </div>
+          </div>
       </div>
     </div>
     <FooterPart/>
@@ -564,6 +583,34 @@ export default {
     justify-content: center;
     align-items: center;
     padding-top: 59px;
+    &-columns{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+.payment-provider{
+  &-title{
+    font-family: 'Oxygen',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 88px;
+  }
+  &-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 59px;
+    padding-bottom: 150px;
     &-columns{
       display: flex;
       justify-content: space-around;
