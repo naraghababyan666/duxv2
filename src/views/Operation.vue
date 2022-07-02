@@ -242,8 +242,9 @@
             </div>
           </div>
       </div>
+      <FooterPart/>
     </div>
-    <FooterPart/>
+
   </div>
 </template>
 
