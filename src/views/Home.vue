@@ -68,58 +68,78 @@
           </marquee>
         </div>
       </div>
-<!--      <div class="partnership">-->
-<!--        <div class="divide_partnership">-->
-<!--          <img src="../assets/images/123123123.svg" />-->
-<!--        </div>-->
-<!--        <div class="title">-->
-<!--          <p>Synergy and partnership</p>-->
-<!--        </div>-->
-<!--        <div class="items">-->
-<!--          <div class="item">-->
-<!--            <img src="../assets/images/partnership-bg.png" />-->
-<!--            <img src="../assets/images/first-logo.svg" />-->
-<!--            <div class="content">-->
-<!--              <p class="title">In People we Trust</p>-->
-<!--              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.-->
-<!--                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>-->
-<!--            </div>-->
-<!--            </div>-->
-<!--          <div class="item">-->
-<!--            <img src="../assets/images/partnership-bg.png" />-->
-<!--            <img src="../assets/images/second-logo.svg" />-->
-<!--            <div class="content">-->
-<!--              <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>-->
-<!--              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.-->
-<!--                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>-->
-<!--            </div>-->
-<!--            </div>-->
-<!--          <div class="item">-->
-<!--            <img src="../assets/images/partnership-bg.png" />-->
-<!--            <img src="../assets/images/third-logo.svg" />-->
-<!--            <div class="content">-->
-<!--              <p class="title">Resilience is Key – We have a plan</p>-->
-<!--              <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of before - This is our strength.-->
-<!--                We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with each new try, we add greater value. Every time.</p>-->
-<!--            </div>-->
-<!--            </div>-->
-<!--          <div class="item">-->
-<!--            <img src="../assets/images/partnership-bg.png" />-->
-<!--            <img src="../assets/images/fourth-logo.svg" />-->
-<!--            <div class="content">-->
-<!--              <p class="title">Team Dux – Together. – We are colleagues</p>-->
-<!--              <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand together in our mission. There is no hierarchy.-->
-<!--                You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most important value we hold.</p>-->
-<!--            </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="partnership">
+        <div class="divide_partnership">
+          <img src="../assets/images/123123123.svg" />
+        </div>
+        <div class="title">
+          <p>Synergy and partnership</p>
+        </div>
+        <div class="items">
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/first-logo.svg" />
+            <div class="content">
+              <p class="title">In People we Trust</p>
+              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
+                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/second-logo.svg" />
+            <div class="content">
+              <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
+              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
+                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/third-logo.svg" />
+            <div class="content">
+              <p class="title">Resilience is Key – We have a plan</p>
+              <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of before - This is our strength.
+                We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with each new try, we add greater value. Every time.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/fourth-logo.svg" />
+            <div class="content">
+              <p class="title">Team Dux – Together. – We are colleagues</p>
+              <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand together in our mission. There is no hierarchy.
+                You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most important value we hold.</p>
+            </div>
+            </div>
+        </div>
+      </div>
       <div class="divide">
         <img src="../assets/images/we-have.svg" />
       </div>
       <div class="slider">
         <div class="title">
           <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
+        </div>
+        <div class="slide_part">
+          <VueSlickCarousel ref="carousel" v-bind="settings">
+            <div><img src="../assets/images/slider/1.png"></div>
+            <div><img src="../assets/images/slider/2.png"></div>
+            <div><img src="../assets/images/slider/3.png"></div>
+            <div><img src="../assets/images/slider/4.png"></div>
+          </VueSlickCarousel>
+          <div class="arrows">
+            <div class="prev" @click="showPrev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+            </div>
+            <div class="next" @click="showNext">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
       <div class="divider">
@@ -249,21 +269,48 @@
 
 import Header from '../components/Header' ;
 import FooterPart from "@/components/Footer";
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
     name: 'home-page',
     data(){
         return {
-
+          settings: {
+            arrows: false,
+            dots: false,
+            slidesToShow: 2.5,
+            infinite: false
+          }
         }
     },
-  components: {FooterPart, Header}
+  components: {FooterPart, Header, VueSlickCarousel },
+  methods: {
+    showNext() {
+      this.$refs.carousel.next()
+    },
+    showPrev() {
+      this.$refs.carousel.prev()
+    },
+  },
 
 }
 
 </script>
 
 <style lang="scss" scoped>
+.arrows{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  .prev, .next{
+    cursor: pointer;
+  }
+  .prev{
+    margin-right: 20px;
+  }
+}
 .blue{
   color: #2F5BD8;
 }
@@ -566,6 +613,12 @@ export default {
 .slider{
   background-color: #010C28;
   padding-top: 95px;
+  .slide_part{
+    margin-left: 140px;
+    img{
+      cursor: pointer;
+    }
+  }
   p{
     width: 740px;
     font-family: 'Oxygen';
